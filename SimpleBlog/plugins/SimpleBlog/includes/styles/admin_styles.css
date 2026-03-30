@@ -1,0 +1,329 @@
+/**
+ * SimpleBlog Plugin for GetSimple CMS
+ * A simple and easy to use blog/newsfeed system designed for GetSimple CMS
+ *
+ * @package: gs-SimpleBlog
+ * @version: 4.0.0-alpha
+ * @author: John Stray <getsimple@johnstray.com>
+ */
+
+.gs_simbleblog_ui_form .leftsec,
+.gs_simbleblog_ui_form .rightsec {
+    padding: 10px 10px 10px 10px;
+}
+
+.gs_simbleblog_ui_form h3 {
+    margin: 20px 0 8px;
+    line-height: 20px;
+    font-size: 18px;
+    font-style: italic;
+    color: cadetblue;
+    border-bottom: 1px solid rgba(0,0,0,0.04);
+}
+
+.gs_simbleblog_ui_form input,
+.gs_simbleblog_ui_form select,
+.gs_simbleblog_ui_form textarea,
+.gs_simbleblog_ui_form .radio {
+    margin-top: 8px;
+}
+
+.gs_simbleblog_ui_form textarea + label {
+    display: inline-block;
+    padding-top: 8px;
+    padding-left: 40px;
+}
+
+.gs_simbleblog_ui_form .radio {
+    width: 49%;
+    display: inline-block;
+}
+.gs_simbleblog_ui_form .radio input[type=radio] {
+    margin-top: 0;
+}
+
+.gs_simpleblog_ui_hline {
+    border: none;
+    border-top: 1px solid #e3e3e3;
+    margin: 0 0 20px;
+}
+
+.gs_simpleblog_ui_filter-box {
+    text-align: left;
+    padding: 10px 15px;
+    display: none;
+}
+.gs_simpleblog_ui_filter-box p {
+    border-bottom: 1px dotted #ccc;
+    margin-bottom: 10px;
+    font-size: 11px;
+    line-height: 12px;
+}
+.gs_simpleblog_ui_filter-box select.text {
+    width: 35.6%;
+}
+.gs_simpleblog_ui_filter-box input.text {
+    width: 50%;
+}
+.gs_simpleblog_ui_filter-box input.submit {
+    width: 12%;
+    height: 24px;
+    padding: 5px 10px;
+}
+
+/* Posts Management Section */
+.gs_simbleblog_ui_no-posts {
+    padding: 20px 50px;
+    margin: 50px auto;
+    width: max-content;
+    text-align: center;
+    background-color: rgba(11, 85, 132, 0.1)
+}
+.gs_simbleblog_ui_no-posts h4 {
+    font-size: 16px;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-weight: normal;
+    font-style: italic;
+    color: #333;
+    margin: 0;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
+    border-radius: 2px;
+    line-height: 22px;
+
+}
+.gs_simbleblog_ui_no-posts p {
+    margin: 0;
+}
+
+#gs_simbleblog_ui_posts-table {
+    margin-bottom: 0;
+}
+#gs_simbleblog_ui_posts-table td {
+    padding: 10px;
+    vertical-align: middle;
+}
+#gs_simbleblog_ui_posts-table td > img {
+    background-color: #fff;
+    height: 37px;
+    width: 66px;
+    float: left;
+    margin: -5px 10px -5px -5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+#gs_simbleblog_ui_posts-table td > a {
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    line-height: 16px;
+}
+#gs_simbleblog_ui_posts-table td > div {
+    position: relative;
+    font-size: 10px;
+    line-height: 12px;
+}
+#gs_simbleblog_ui_posts-table td > div > div {
+    float: left;
+}
+#gs_simbleblog_ui_posts-table td > div > div:nth-child(-n+2) {
+    width: 28%;
+}
+#gs_simbleblog_ui_posts-table td > div > div.clear {
+    float: none;
+    clear: both;
+}
+
+#gs_simbleblog_ui_posts-table td.delete > a,
+#gs_simbleblog_ui_posts-table td.secondarylink > a {
+    width: 20px;
+    height: 20px;
+    line-height:20px;
+}
+
+#gs_simbleblog_ui_posts-table td.delete > a svg,
+#gs_simbleblog_ui_posts-table td.secondarylink > a svg {
+    width: 16px;
+    margin-top: 3px;
+}
+
+#gs_simbleblog_ui_pagination {
+    margin: 20px 0 0;
+    padding: 5px;
+    background-color: #f9f9f9;
+    border: 1px solid #e8e8e8;
+    border-radius: 2px;
+}
+
+/* Category Management Page */
+#metadata_toggle {
+    margin-top: 0;
+}
+.gs_simpleblog_ui_new-category {
+    padding: 10px 15px;
+    display: none;
+}
+.gs_simpleblog_ui_new-category p {
+    border-bottom: 1px dotted #ccc;
+    margin-bottom: 10px;
+    font-size: 11px;
+    line-height: 12px;
+}
+.gs_simpleblog_ui_new-category .input-group {
+    display: flex;
+}
+.gs_simpleblog_ui_new-category .input-group label {
+    width: 30%;
+    height: 24px;
+    line-height: 24px;
+}
+.gs_simpleblog_ui_new-category .largeform fieldset {
+    padding: 10px 15px;
+    margin: 0;
+    border: none;
+}
+.gs_simpleblog_ui_new-category .largeform textarea {
+    height: 50px;
+}
+.gs_simpleblog_ui_new-category .largeform input.submit {
+    display: block;
+    margin: 0 auto;
+    height: 24px;
+    padding: 5px 10px;
+}
+#gs_simpleblog_ui_categories_table td.secondarylink {
+    text-align: center;
+    vertical-align: middle;
+}
+#gs_simpleblog_ui_categories_table td.delete {
+    text-align: center;
+    vertical-align: middle;
+    padding-right: 10px;
+}
+#gs_simpleblog_ui_categories_table td.delete > a,
+#gs_simpleblog_ui_categories_table td.secondarylink > a {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    display: block;
+    margin: 0 auto;
+}
+#gs_simpleblog_ui_categories_table td.delete > a svg,
+#gs_simpleblog_ui_categories_table td.secondarylink > a svg {
+    width: 16px;
+    margin-top: 3px;
+}
+#gs_simpleblog_ui_categories_table td.name {
+    padding-left: 10px;
+    color: #333;
+}
+#gs_simpleblog_ui_categories_table td.name a:before {
+    content: '[ ';
+}
+#gs_simpleblog_ui_categories_table td.name a:after {
+    content: ' ]';
+}
+#gs_simpleblog_ui_categories_table td.name p {
+    margin-bottom: 3px;
+    line-height: 10px;
+    color: #777;
+    max-width: 500px;
+    font-size: 10px;
+}
+#gs_simpleblog_ui_categories_table tr.editcat {
+    background-color: #ffffd5 !important;
+}
+#gs_simpleblog_ui_categories_table tr.editcat td.editname {
+    padding: 10px;
+}
+#gs_simpleblog_ui_categories_table td.editname input {
+    font-size: 10px;
+    border: none;
+    border-bottom: 1px solid #cfcfcf;
+}
+#gs_simpleblog_ui_categories_table td.editname textarea {
+    height: 30px;
+    line-height: 10px;
+    font-size: 9px;
+    border: none;
+    border-bottom: 1px solid #cfcfcf;
+    color: #777;
+}
+.gs_simpleblog_ui_sort-button {
+    display:inline-block;
+    width: 14px; height: 14px;
+    padding:2px 4px;
+    border: 1px solid #333;
+    border-radius: 3px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+.gs_simpleblog_ui_sort-button:after {
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-color: currentColor;
+    content: '';
+    mask-repeat: no-repeat;
+    mask-position: center center;
+    mask-size: contain;
+}
+.gs_simpleblog_ui_sort-button:hover {
+    background-color: #182227;
+    cursor: pointer;
+}
+.gs_simpleblog_ui_sort-button:hover:after {
+    color: #afc5cf;
+}
+.gs_simpleblog_ui_sort-button.sort-az[data-order=asc]:after {
+    mask-image: url('/jDesign34.test/plugins/SimpleBlog/includes/images/arrow-down-a-z-solid.svg');
+}
+.gs_simpleblog_ui_sort-button.sort-az[data-order=desc]:after {
+    mask-image: url('/jDesign34.test/plugins/SimpleBlog/includes/images/arrow-down-z-a-solid.svg');
+}
+.gs_simpleblog_ui_sort-button.sort-19[data-order=asc]:after {
+    mask-image: url('/jDesign34.test/plugins/SimpleBlog/includes/images/arrow-down-1-9-solid.svg');
+}
+.gs_simpleblog_ui_sort-button.sort-19[data-order=desc]:after {
+    mask-image: url('/jDesign34.test/plugins/SimpleBlog/includes/images/arrow-down-9-1-solid.svg');
+}
+#gs_simpleblog_ui_categories_table .pagination {
+    margin: 0 !important;
+    text-align: center;
+}
+#gs_simpleblog_ui_categories_table .pagination li {
+    list-style: none;
+    display: inline-block;
+}
+#gs_simpleblog_ui_categories_table .pagination li a {
+    display: block;
+    margin: 0 3px 0;
+    width: 14px;
+    height: 14px;
+    padding: 2px 2px;
+    border: 1px solid #333;
+    border-radius: 3px;
+    text-align: center;
+}
+#gs_simpleblog_ui_categories_table .pagination li a:hover,
+#gs_simpleblog_ui_categories_table .pagination li.active a:hover {
+    background-color: #afc5cf;
+}
+#gs_simpleblog_ui_categories_table .pagination li.active a {
+    background-color: #f7f7f7;
+}
+
+/* Copyright Text Section */
+.gs_simpleblog_ui_copyright-text {
+  text-shadow: 1px 1px 0 rgba(255,255,255,.4);
+  margin: -30px 250px 0 0;
+  padding: 10px 0 0;
+  font-size: 11px;
+  color: #999;
+  text-align: center;
+}
+.gs_simpleblog_ui_copyright-text div {
+  font-size:10px;
+}
+.gs_simpleblog_ui_copyright-text a {
+  color:#888 !important;
+  text-decoration:none !important;
+}
